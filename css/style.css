@@ -313,7 +313,7 @@ footer{
 
 /* BONUS GRIGLIA TABLET */
 
-@media screen and (max-width:1020px) and (min-width:480px){
+@media screen and (max-width:1020px) and (min-width:481px){
 
     .layout-tablet{
         display: flex;
