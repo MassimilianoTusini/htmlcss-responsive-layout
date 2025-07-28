@@ -24,7 +24,6 @@ h1{
     font-family: 'Nerko One', cursive;
     color: #FF9613;
     padding: 0.8rem 1rem;
-    text-align: start;
     font-size: 2.5rem;
 }
 
@@ -56,6 +55,13 @@ h1{
     padding-bottom: 0.6rem;
 }
 
+/* Header responsive */
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+}
+
 /* Regole main */
 
 main{
@@ -66,13 +72,6 @@ main{
     width: 70%;
     margin: 0 auto;
     padding: 2rem 0;
-}
-
-/* Header responsive */
-@media screen and (max-width:480px){
-    h1{
-        text-align: center;
-    }
 }
 
 /* Regole sezione Ricetta */
@@ -124,10 +123,6 @@ main{
         display: none;
     }
 }
-
-    
-
-
 
 /* Regole Navbar*/
 
@@ -236,7 +231,10 @@ p img{
     p img{
         display: block;
         float: none;
-        margin: 0 auto;
+        margin: 0.5rem auto;
+    }
+    hr{
+        margin-bottom: 1rem;
     }
 }
     
