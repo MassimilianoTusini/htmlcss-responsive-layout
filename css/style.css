@@ -14,7 +14,7 @@ body{
 hr{
     border: 1px solid orange;
     width: 5rem;
-    margin-bottom: 3rem; 
+    margin-bottom: 3rem;
 }
 
 ul{
@@ -38,7 +38,7 @@ h1{
 
 #recipe h2{
     font-size: 2.2rem;
-    color: #4E3969; 
+    color: #4E3969;
     padding: 0.5rem 0 1.2rem;
 }
 
@@ -93,8 +93,17 @@ main{
 
 .big-section{
     width: 70%;
-    /* DEBUG */
-    /* min-height: 150px; */
+    aspect-ratio: 16/9;
+}
+
+/* Esercizio Bonus */
+
+.big-section iframe{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: none;
+
 }
 
 .small-section{
@@ -102,14 +111,9 @@ main{
     background-color: white;
     padding: 2rem;
     box-shadow: 0px 3px 12px lightgray;
-    /* DEBUG */
-    /* min-height: 150px; */
 }
 
-.big-section img{
-    width: 100%;
-    height: 100%;
-}
+
 
 /* Sezione Ricetta responsive */
 
@@ -210,6 +214,7 @@ main{
 /* Regole banner pubblicitario responsive */
 
 @media screen and (max-width:480px){
+
     .banner img{
         display: none;
     }
@@ -225,8 +230,7 @@ main{
 
 p img{
     float: left;
-    margin-right: 0.6rem;
-    margin-top: 0.6rem;
+    margin: 0.6rem 0.6rem 0 0;
     width: 20rem;
 }
 
@@ -238,6 +242,7 @@ p img{
 /* Sezione Introduction responsive */
 
 @media screen and (max-width:480px){
+
     p img{
         display: block;
         float: none;
@@ -251,7 +256,7 @@ p img{
     }
 
 }
-    
+
 /* Regole Sezione Footer */
 
 footer{
@@ -286,7 +291,10 @@ footer{
     font-size: 0.9rem;
 }
 
+/* Regole Footer responsive */
+
 @media screen and (max-width:780px){
+
     .footer-left{
         display: block;
         width: 100%;
@@ -306,6 +314,7 @@ footer{
 /* BONUS GRIGLIA TABLET */
 
 @media screen and (max-width:1020px) and (min-width:480px){
+
     .layout-tablet{
         display: flex;
         flex-wrap: wrap;
