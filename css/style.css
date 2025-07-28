@@ -14,8 +14,11 @@ body{
 hr{
     border: 1px solid orange;
     width: 5rem;
-    margin-bottom: 3rem;
-    
+    margin-bottom: 3rem; 
+}
+
+ul{
+    list-style-type: none;
 }
 
 /* Regole testi */
@@ -53,6 +56,14 @@ h1{
     font-weight: 500;
     font-size: 1.7rem;
     padding-bottom: 0.6rem;
+}
+
+.footer-left span{
+    font-size: 0.9rem;
+}
+
+.footer-left h5{
+    margin-bottom: 0.5rem;
 }
 
 /* Header responsive */
@@ -130,7 +141,6 @@ main{
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 0;
-    list-style-type: none;
 }
 
 /* Regole Social Media */
@@ -222,7 +232,7 @@ p img{
 
 #introduction p{
     line-height: 2rem;
-    text-align: top;
+    padding-bottom: 3rem;
 }
 
 /* Sezione Introduction responsive */
@@ -236,5 +246,59 @@ p img{
     hr{
         margin-bottom: 1rem;
     }
+    #introduction p{
+        padding-bottom: 0;
+    }
+
 }
     
+/* Regole Sezione Footer */
+
+footer{
+    background-color: #7C69A4;
+    color: white;
+}
+
+.footer-flex{
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-left{
+    width: 40%;
+}
+
+.footer-right{
+    display: flex;
+    width: 60%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-right ul{
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-right a{
+    color: white;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width:780px){
+    .footer-left{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .footer-right{
+        width: 100%;
+        justify-content: center;
+    }
+        .footer-right ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
