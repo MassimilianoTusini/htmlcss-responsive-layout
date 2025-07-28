@@ -5,3 +5,27 @@
     box-sizing: border-box;
 }
 
+/* Regole Generali */
+
+:root{
+    font-size: 0.9rem;
+}
+
+main{
+    background-color: #F6F5F3;
+}
+
+/* Regole Header */
+
+h1{
+    font-family: 'Nerko One';
+    color: #FF9613;
+    padding: 10px 15px;
+    text-align: start;
+}
+/* Header responsive */
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+}
