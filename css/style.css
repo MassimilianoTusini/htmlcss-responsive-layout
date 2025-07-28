@@ -187,13 +187,13 @@ main{
 /* Regole Social Media responsive */
 
 @media screen and (max-width:1350px) and (min-width:650px){
-    .icons a{
+    .icons span{
         display: none;
     }
 }
 
 @media screen and (max-width:649px){
-    .icons a{
+    .icons span{
         display: none;
     }
 
