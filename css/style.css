@@ -16,7 +16,7 @@ body{
 h1{
     font-family: 'Nerko One', cursive;
     color: #FF9613;
-    padding: 10px 15px;
+    padding: 0.8rem 1rem;
     text-align: start;
     font-size: 2.5rem;
 }
@@ -35,7 +35,6 @@ h1{
 
 .small-section span{
     display: block;
-    font-weight: 400;
     padding: 0.5rem 0;
     font-size: 0.8rem;
 }
@@ -52,7 +51,7 @@ main{
 }
 
 .container{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     padding: 2rem 0;
 }
@@ -80,6 +79,7 @@ main{
     width: 30%;
     background-color: white;
     padding: 2rem;
+    box-shadow: 0px 3px 12px lightgray;
     /* DEBUG */
     /* min-height: 150px; */
 }
@@ -95,18 +95,93 @@ main{
 
     .container{
         width: 90%;
-}
+    }
+
     .row{
         display: block;
-}
+    }
 
     .big-section,
     .small-section{
         width: 100%
+    }
 }
+
+/* Regole Navbar*/
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    list-style-type: none;
 }
 
+/* Regole Social Media */
 
+.icons{
+    background-color: white;
+    padding: 0.6rem 3rem;
+    font-size: 0.8rem;
+    border-radius: 1rem;
+    box-shadow: 0px 3px 12px lightgray;
+    cursor: pointer;
+}
 
-    
+.icons a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
 
+.fa-facebook::before{
+    color: #0a6fc8;
+}
+
+.fa-twitter::before{
+    color: #1E96E8;
+}
+
+.fa-instagram::before{
+    color: #C42D90;
+}
+
+.fa-pinterest::before{
+    color: #DE0319;
+}
+
+.fa-youtube::before{
+    color: #F70000;
+}
+
+/* Regole Social Media responsive */
+
+@media screen and (max-width:1350px) and (min-width:650px){
+    .icons a{
+        display: none;
+    }
+}
+
+@media screen and (max-width:649px){
+    .icons a{
+        display: none;
+    }
+
+    .icons{
+        padding: 0.6rem 0.6rem;
+    }
+}
+
+/* Regole banner pubblicitario */
+
+.banner img{
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Regole banner pubblicitario responsive */
+
+@media screen and (max-width:480px){
+    .banner img{
+        display: none;
+    }
+}
